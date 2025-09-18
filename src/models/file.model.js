@@ -14,12 +14,16 @@ const fileSchema = new Schema(
       type: String,
       required: true,
     },
+    public_id: {
+      type: String, 
+      default: null,
+    },
     page: {
       type: String,
       required: true,
     },
     category: {
-      type: String, 
+      type: String,
       default: "general",
     },
   },
